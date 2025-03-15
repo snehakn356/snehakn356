@@ -1,0 +1,9 @@
+def write_to_file(filename):
+    user_input = input("Enter text to save to file: ")
+    with open(filename, "w") as file:
+        file.write(user_input)
+    print(f"Data successfully written to {filename}")
+
+if __name__ == "__main__":
+    filename = "output.txt" 
+    write_to_file(filename)
